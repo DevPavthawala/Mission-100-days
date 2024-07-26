@@ -11,7 +11,7 @@
 
 class HashTable:
     def __init__(self):
-        self.Max =  100
+        self.Max =  10
         self.arr = [None for i in range(self.Max)]
 
     def get_hash(self,key):
@@ -35,11 +35,15 @@ class HashTable:
 
 t = HashTable()
 
-t['april 6'] = 190
+t['march 6'] = 190
 t['april 25'] = 110
 t['march 1'] = 120
 t['dec 31'] = 130
 
+print(t.get_hash('march 6'))
+print(t.get_hash('april 25'))
+print(t.get_hash('march 1'))
+print(t.get_hash('dec 31'))
 
 print(t.arr)
 
